@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TFM — Índice de Notebooks (HTML)</title>
+  <style>
+    :root {
+      --text: #111;
+      --muted: #666;
+      --border: #e6e6e6;
+      --bg: #fff;
+      --card: #fafafa;
+      --link: #0a58ca;
+    }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+    header {
+      padding: 2rem 1.25rem 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 1.25rem;
+    }
+    h1 { margin: 0 0 .25rem; font-size: 1.6rem; }
+    p.lead { margin: 0; color: var(--muted); }
+
+    .section {
+      margin: 1.25rem 0;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--card);
+      overflow: hidden;
+    }
+    .section > .section-header {
+      padding: 1rem 1rem .75rem;
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-title {
+      margin: 0;
+      font-size: 1.15rem;
+      font-weight: 650;
+    }
+    .section-subtitle {
+      margin: .25rem 0 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+    .section-content {
+      padding: 1rem;
+    }
+
+    details {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: .75rem .9rem;
+      margin: .75rem 0;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+    }
+    ul { margin: .5rem 0 0 1.25rem; }
+    li { margin: .35rem 0; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .meta {
+      color: var(--muted);
+      font-size: .92rem;
+    }
+    .pill {
+      display: inline-block;
+      font-size: .75rem;
+      padding: .15rem .5rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      margin-left: .4rem;
+      vertical-align: middle;
+      background: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>TFM — Índice de Notebooks (HTML)</h1>
+    <p class="lead">Estructura organizada según el anexo de códigos (A.1 / A.2 / A.3) y Monitorización.</p>
+  </header>
+
+  <main>
+
+    <!-- A.1 -->
+    <section class="section" id="a1">
+      <div class="section-header">
+        <h2 class="section-title">A.1. Códigos del ETL</h2>
+        <p class="section-subtitle">Pipelines y preparación de datos.</p>
+      </div>
+      <div class="section-content">
+        <ul>
+          <li>
+            <a href="2026-02-04 Input file single function_pipeline V_1.0.html">
+              2026-02-04 — Input file single function_pipeline (V_1.0)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- A.2 -->
+    <section class="section" id="a2">
+      <div class="section-header">
+        <h2 class="section-title">A.2. Códigos del EDA</h2>
+        <p class="section-subtitle">Exploración / análisis descriptivo (añade aquí los HTML cuando los generes).</p>
+      </div>
+      <div class="section-content">
+        <p class="meta">
+          No se han detectado enlaces de EDA en tu índice actual. Cuando exportes los HTML del EDA,
+          añade los links en esta sección.
+        </p>
+      </div>
+    </section>
+
+    <!-- A.3 -->
+    <section class="section" id="a3">
+      <div class="section-header">
+        <h2 class="section-title">A.3. Códigos de los Modelos de predicción de Ventas y Cantidades</h2>
+        <p class="section-subtitle">Notebooks de entrenamiento, evaluación y escenarios (Prophet).</p>
+      </div>
+
+      <div class="section-content">
+
+        <details open>
+          <summary>Modelo de Revenue</summary>
+          <ul>
+            <li>
+              <a href="2026-01-25 Modelos TFM Ventas Prophet V_1.14.html">
+                2026-01-25 — Modelos TFM Ventas Prophet (V_1.14)
+              </a>
+              <span class="pill">Desarollo: entrenamiento 2022-2024, evaluación todo 2025</span>
+            </li>
+            <li>
+              <a href="2026-01-31 Modelos TFM Ventas Prophet V_2.01.html">
+                2026-01-31 — Modelos TFM Ventas Prophet (V_2.01)
+              </a>
+              <span class="pill">Producción: entrenamiento 2022-2025 + escenarios</span>
+            </li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Modelo de Cantidades de Cafés Clásicos</summary>
+          <ul>
+            <li>
+              <a href="2026_01_25_Modelos_TFM_Cafe_clasico_Prophet_V_1_4.html">
+                2026-01-25 — Modelos TFM Cafe_clasico Prophet (V_1.4)
+              </a>
+              <span class="pill">Desarollo: entrenamiento 2022-2024, evaluación todo 2025</span>
+            </li>
+            <li>
+              <a href="2026_02_01_Modelos_TFM_Cafe_Clasicos_Prophet_V_2_01.html">
+                2026-02-01 — Modelos TFM Cafe Clásicos Prophet (V_2.01)
+              </a>
+              <span class="pill">Producción: entrenamiento 2022-2025 + escenarios</span>
+            </li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Modelo de Cantidades de Dulces y Repostería</summary>
+          <ul>
+            <li>
+              <a href="1_3_2026_01_25_Modelos_TFM_DULCES_Y_REPOSTERIA_Prophet_V_1_14.html">
+                2026-01-25 — Modelos TFM DULCES_Y_REPOSTERIA Prophet (V_1.14)
+              </a>
+              <span class="pill">Desarollo: entrenamiento 2022-2024, evaluación todo 2025</span>
+            </li>
+            <li>
+              <a href="2026_02_01_Modelos_TFM_Dulces_y_resposteria_Prophet_V_2_01.html">
+                2026-02-01 — Modelos TFM Dulces y repostería Prophet (V_2.01)
+              </a>
+              <span class="pill">Producción: entrenamiento 2022-2025 + escenarios</span>
+            </li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Modelo de Cantidades de Desayunos (Tostadas / Panes)</summary>
+          <ul>
+            <li>
+              <a href="2026-01-30 Modelos TFM DESAYUNOS_TOSTADAS_PANES Prophet V_1.2.html">
+                2026-01-30 — Modelos TFM DESAYUNOS_TOSTADAS_PANES Prophet (V_1.2)
+              </a>
+              <span class="pill">Desarollo: entrenamiento 2022-2024, evaluación todo 2025</span>
+            </li>
+            <li>
+              <a href="2026-01-31 Modelos TFM Desayunos Tos Pan Prophet V_2.01.html">
+                2026-01-31 — Modelos TFM Desayunos Tos Pan Prophet (V_2.01)
+              </a>
+              <span class="pill">Producción: entrenamiento 2022-2025 + escenarios</span>
+            </li>
+          </ul>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- Monitoring -->
+    <section class="section" id="monitoring">
+      <div class="section-header">
+        <h2 class="section-title">Model Monitoring</h2>
+        <p class="section-subtitle">Evaluación / seguimiento del rendimiento del modelo.</p>
+      </div>
+      <div class="section-content">
+        <ul>
+          <li>
+            <a href="2026-02-11 7.Model Monitoring Evaluation V_1.0.html">
+              2026-02-11 — Model Monitoring Evaluation (V_1.0)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- A.4 -->
+    <section class="section" id="a4">
+      <div class="section-header">
+        <h2 class="section-title">A.4. Códigos del Text Mining y de la Análisis de Sentimiento</h2>
+        <p class="section-subtitle">Procesamiento de texto, minería y análisis de sentimiento (se añadirá contenido aquí).</p>
+      </div>
+      <div class="section-content">
+        <p class="meta">
+          (Pendiente) Esta sección está preparada para recibir futuros documentos / notebooks en HTML.
+        </p>
+      </div>
+    </section>
+
+    <!-- A.5 -->
+    <section class="section" id="a5">
+      <div class="section-header">
+        <h2 class="section-title">A.5. Códigos del Interfaz del Usuario</h2>
+        <p class="section-subtitle">Código de la interfaz (Streamlit) en repositorio externo.</p>
+      </div>
+      <div class="section-content">
+        <ul>
+          <li>
+            <a href="https://github.com/lucaiaco21/Pythia/" target="_blank" rel="noopener noreferrer">
+              https://github.com/lucaiaco21/Pythia/
+            </a>
+            <span class="pill">Repositorio externo</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+  </main>
+</body>
+</html>
+
+
