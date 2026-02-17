@@ -7822,7 +7822,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Instalar las librerías necesarias si no están instaladas</span>
@@ -7843,41 +7843,31 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Collecting yake
-  Downloading yake-0.7.3-py3-none-any.whl.metadata (11 kB)
+<pre>Requirement already satisfied: yake in /usr/local/lib/python3.12/dist-packages (0.7.3)
 Requirement already satisfied: click&gt;=6.0 in /usr/local/lib/python3.12/dist-packages (from yake) (8.3.1)
-Collecting jellyfish (from yake)
-  Downloading jellyfish-1.2.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (642 bytes)
+Requirement already satisfied: jellyfish in /usr/local/lib/python3.12/dist-packages (from yake) (1.2.1)
 Requirement already satisfied: networkx in /usr/local/lib/python3.12/dist-packages (from yake) (3.6.1)
 Requirement already satisfied: numpy&gt;=1.24.0 in /usr/local/lib/python3.12/dist-packages (from yake) (2.0.2)
-Collecting segtok (from yake)
-  Downloading segtok-1.5.11-py3-none-any.whl.metadata (9.0 kB)
+Requirement already satisfied: segtok in /usr/local/lib/python3.12/dist-packages (from yake) (1.5.11)
 Requirement already satisfied: tabulate in /usr/local/lib/python3.12/dist-packages (from yake) (0.9.0)
 Requirement already satisfied: regex in /usr/local/lib/python3.12/dist-packages (from segtok-&gt;yake) (2025.11.3)
-Downloading yake-0.7.3-py3-none-any.whl (91 kB)
-   <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">91.4/91.4 kB</span> <span class="ansi-red-fg">4.8 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>
-Downloading jellyfish-1.2.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (360 kB)
-   <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">360.5/360.5 kB</span> <span class="ansi-red-fg">22.8 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>
-Downloading segtok-1.5.11-py3-none-any.whl (24 kB)
-Installing collected packages: segtok, jellyfish, yake
-Successfully installed jellyfish-1.2.1 segtok-1.5.11 yake-0.7.3
 Requirement already satisfied: sentence-transformers in /usr/local/lib/python3.12/dist-packages (5.2.2)
 Requirement already satisfied: transformers&lt;6.0.0,&gt;=4.41.0 in /usr/local/lib/python3.12/dist-packages (from sentence-transformers) (5.0.0)
-Requirement already satisfied: huggingface-hub&gt;=0.20.0 in /usr/local/lib/python3.12/dist-packages (from sentence-transformers) (1.4.0)
+Requirement already satisfied: huggingface-hub&gt;=0.20.0 in /usr/local/lib/python3.12/dist-packages (from sentence-transformers) (1.4.1)
 Requirement already satisfied: torch&gt;=1.11.0 in /usr/local/lib/python3.12/dist-packages (from sentence-transformers) (2.9.0+cu128)
 Requirement already satisfied: numpy in /usr/local/lib/python3.12/dist-packages (from sentence-transformers) (2.0.2)
 Requirement already satisfied: scikit-learn in /usr/local/lib/python3.12/dist-packages (from sentence-transformers) (1.6.1)
 Requirement already satisfied: scipy in /usr/local/lib/python3.12/dist-packages (from sentence-transformers) (1.16.3)
 Requirement already satisfied: typing_extensions&gt;=4.5.0 in /usr/local/lib/python3.12/dist-packages (from sentence-transformers) (4.15.0)
 Requirement already satisfied: tqdm in /usr/local/lib/python3.12/dist-packages (from sentence-transformers) (4.67.3)
-Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (3.20.3)
+Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (3.21.0)
 Requirement already satisfied: fsspec&gt;=2023.5.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (2025.3.0)
 Requirement already satisfied: hf-xet&lt;2.0.0,&gt;=1.2.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (1.2.0)
 Requirement already satisfied: httpx&lt;1,&gt;=0.23.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (0.28.1)
 Requirement already satisfied: packaging&gt;=20.9 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (26.0)
 Requirement already satisfied: pyyaml&gt;=5.1 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (6.0.3)
 Requirement already satisfied: shellingham in /usr/local/lib/python3.12/dist-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (1.5.4)
-Requirement already satisfied: typer-slim in /usr/local/lib/python3.12/dist-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (0.21.1)
+Requirement already satisfied: typer-slim in /usr/local/lib/python3.12/dist-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (0.23.0)
 Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from torch&gt;=1.11.0-&gt;sentence-transformers) (75.2.0)
 Requirement already satisfied: sympy&gt;=1.13.3 in /usr/local/lib/python3.12/dist-packages (from torch&gt;=1.11.0-&gt;sentence-transformers) (1.14.0)
 Requirement already satisfied: networkx&gt;=2.5.1 in /usr/local/lib/python3.12/dist-packages (from torch&gt;=1.11.0-&gt;sentence-transformers) (3.6.1)
@@ -7910,7 +7900,13 @@ Requirement already satisfied: idna in /usr/local/lib/python3.12/dist-packages (
 Requirement already satisfied: h11&gt;=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore==1.*-&gt;httpx&lt;1,&gt;=0.23.0-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (0.16.0)
 Requirement already satisfied: mpmath&lt;1.4,&gt;=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy&gt;=1.13.3-&gt;torch&gt;=1.11.0-&gt;sentence-transformers) (1.3.0)
 Requirement already satisfied: MarkupSafe&gt;=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2-&gt;torch&gt;=1.11.0-&gt;sentence-transformers) (3.0.3)
-Requirement already satisfied: click&gt;=8.0.0 in /usr/local/lib/python3.12/dist-packages (from typer-slim-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (8.3.1)
+Requirement already satisfied: typer&gt;=0.23.0 in /usr/local/lib/python3.12/dist-packages (from typer-slim-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (0.23.0)
+Requirement already satisfied: click&gt;=8.0.0 in /usr/local/lib/python3.12/dist-packages (from typer&gt;=0.23.0-&gt;typer-slim-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (8.3.1)
+Requirement already satisfied: rich&gt;=10.11.0 in /usr/local/lib/python3.12/dist-packages (from typer&gt;=0.23.0-&gt;typer-slim-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (13.9.4)
+Requirement already satisfied: annotated-doc&gt;=0.0.2 in /usr/local/lib/python3.12/dist-packages (from typer&gt;=0.23.0-&gt;typer-slim-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (0.0.4)
+Requirement already satisfied: markdown-it-py&gt;=2.2.0 in /usr/local/lib/python3.12/dist-packages (from rich&gt;=10.11.0-&gt;typer&gt;=0.23.0-&gt;typer-slim-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (4.0.0)
+Requirement already satisfied: pygments&lt;3.0.0,&gt;=2.13.0 in /usr/local/lib/python3.12/dist-packages (from rich&gt;=10.11.0-&gt;typer&gt;=0.23.0-&gt;typer-slim-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (2.19.2)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.12/dist-packages (from markdown-it-py&gt;=2.2.0-&gt;rich&gt;=10.11.0-&gt;typer&gt;=0.23.0-&gt;typer-slim-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (0.1.2)
 Requirement already satisfied: nltk in /usr/local/lib/python3.12/dist-packages (3.9.1)
 Requirement already satisfied: click in /usr/local/lib/python3.12/dist-packages (from nltk) (8.3.1)
 Requirement already satisfied: joblib in /usr/local/lib/python3.12/dist-packages (from nltk) (1.5.3)
@@ -7945,7 +7941,7 @@ Requirement already satisfied: et-xmlfile in /usr/local/lib/python3.12/dist-pack
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -7973,14 +7969,14 @@ Requirement already satisfied: et-xmlfile in /usr/local/lib/python3.12/dist-pack
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>[nltk_data] Downloading package punkt to /root/nltk_data...
-[nltk_data]   Unzipping tokenizers/punkt.zip.
+[nltk_data]   Package punkt is already up-to-date!
 [nltk_data] Downloading package punkt_tab to /root/nltk_data...
-[nltk_data]   Unzipping tokenizers/punkt_tab.zip.
+[nltk_data]   Package punkt_tab is already up-to-date!
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>True</pre>
 </div>
@@ -8003,7 +7999,7 @@ Requirement already satisfied: et-xmlfile in /usr/local/lib/python3.12/dist-pack
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Cargar el archivo CSV</span>
@@ -8075,7 +8071,7 @@ Valores únicos de starRating: ['FIVE' 'FOUR' 'THREE' 'TWO' 'ONE']
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Función para convertir el rating de texto a número</span>
@@ -8152,7 +8148,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">clean_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
@@ -8223,7 +8219,7 @@ very welcoming place with quality products at a great price the staff was also f
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">nltk.tokenize</span><span class="w"> </span><span class="kn">import</span> <span class="n">sent_tokenize</span>
@@ -8298,7 +8294,7 @@ Locale molto accogliente con prodotti di qualitá ad un ottimo prezzo.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">yake</span>
@@ -8355,7 +8351,7 @@ Elementos extraídos: ['croissant was delicious', 'coffee was excellent', 'delic
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sentence_transformers</span><span class="w"> </span><span class="kn">import</span> <span class="n">SentenceTransformer</span><span class="p">,</span> <span class="n">util</span>
@@ -8421,16 +8417,16 @@ Elementos extraídos: ['croissant was delicious', 'coffee was excellent', 'delic
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>config.json:   0%|          | 0.00/612 [00:00&lt;?, ?B/s]</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
 <pre>Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 </pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>config.json:   0%|          | 0.00/612 [00:00&lt;?, ?B/s]</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -8506,7 +8502,7 @@ Notes:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">extract_loved_items</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
@@ -8621,7 +8617,7 @@ Extracción completada. Total de elementos encontrados: 22629
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Extraer todos los elementos únicos</span>
@@ -8656,24 +8652,24 @@ Extracción completada. Total de elementos encontrados: 22629
 <pre>Total de elementos únicos antes de normalización: 8769
 
 Normalizando elementos similares...
-Elementos después de normalización: 5522
+Elementos después de normalización: 5544
 
 Ejemplos de elementos agrupados:
 
-'breakfast an afternoon' agrupa:
-  - breakfast an afternoon
-  - morning for breakfast
-  - breakfast lunch
-  - early for breakfast
-  - lunch breakfast
+'afternoon coffees' agrupa:
+  - afternoon coffees
+  - mid morning coffee
+  - coffee mid afternoon
+  - afternoon coffee
 
-'hustle and bustle' agrupa:
-  - hustle and bustle
-  - hustle
+'table' agrupa:
+  - table
+  - find a table
+  - tables
 
-'highly recommend eating' agrupa:
-  - highly recommend eating
-  - recommend eating
+'recharge' agrupa:
+  - recharge
+  - recharge your batteries
 </pre>
 </div>
 </div>
@@ -8695,7 +8691,7 @@ Ejemplos de elementos agrupados:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Crear mapeo de frases a su forma canónica</span>
@@ -8743,12 +8739,12 @@ Primeras filas del DataFrame procesado:
 3  very welcoming place with quality products at ...       5   
 4  very welcoming place with quality products at ...       5   
 
-         normalized_item  
-0            great price  
-1              welcoming  
-2     high quality place  
-3  good quality products  
-4                 prices  
+        normalized_item  
+0           great price  
+1       welcoming place  
+2         quality place  
+3  products and quality  
+4                 price  
 </pre>
 </div>
 </div>
@@ -8770,7 +8766,7 @@ Primeras filas del DataFrame procesado:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Crear insights globales con ratings promedio</span>
@@ -8814,27 +8810,27 @@ Primeras filas del DataFrame procesado:
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
 === TOP 20 ELEMENTOS MÁS MENCIONADOS ===
-       normalized_item  mentions  avg_rating    sentiment
-    drinks with coffee       544    4.295956     Positivo
-        place and good       536    4.460821     Positivo
-                  good       496    4.391129     Positivo
-               service       443    4.539503 Muy Positivo
-             excellent       440    4.827273 Muy Positivo
-             delicious       293    4.781570 Muy Positivo
-         friendly nice       267    4.614232 Muy Positivo
-            staff nice       241    4.643154 Muy Positivo
-breakfast an afternoon       237    4.421941     Positivo
-    super good service       219    4.771689 Muy Positivo
-                  nice       207    4.473430     Positivo
-    highly recommended       207    4.826087 Muy Positivo
-                 foods       181    4.558011 Muy Positivo
-            good place       176    4.551136 Muy Positivo
-      good coffee nice       170    4.629412 Muy Positivo
-                prices       118    3.872881     Positivo
-       atmosphere cool       116    4.577586 Muy Positivo
-       thing in madrid       110    4.718182 Muy Positivo
-                  back       104    4.192308     Positivo
-         cafe friendly       101    4.376238     Positivo
+    normalized_item  mentions  avg_rating    sentiment
+             places       511    4.461840     Positivo
+   coffee and place       508    4.287402     Positivo
+               good       495    4.389899     Positivo
+           services       445    4.539326 Muy Positivo
+     breakfast good       365    4.531507 Muy Positivo
+          delicious       293    4.781570 Muy Positivo
+  kind and friendly       267    4.610487 Muy Positivo
+          wonderful       265    4.781132 Muy Positivo
+          excellent       208    4.879808 Muy Positivo
+               nice       207    4.473430     Positivo
+ highly recommended       207    4.826087 Muy Positivo
+      staff depends       201    4.592040 Muy Positivo
+  nice good service       194    4.742268 Muy Positivo
+              foods       181    4.558011 Muy Positivo
+ pretty good coffee       157    4.617834 Muy Positivo
+    cool atmosphere       119    4.588235 Muy Positivo
+              price       118    3.872881     Positivo
+cafe with delicious       116    4.491379     Positivo
+         good place       111    4.459459     Positivo
+   madrid and loved       108    4.712963 Muy Positivo
 </pre>
 </div>
 </div>
@@ -8856,7 +8852,7 @@ breakfast an afternoon       237    4.421941     Positivo
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Filtrar elementos con suficientes menciones para ser significativos</span>
@@ -8880,7 +8876,7 @@ breakfast an afternoon       237    4.421941     Positivo
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">=== ÁREAS DE MEJORA (Elementos con valoración baja) ==="</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">improvements</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">¡Excelente! No se encontraron áreas significativas de mejora."</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"\No se encontraron áreas significativas de mejora."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8895,35 +8891,35 @@ breakfast an afternoon       237    4.421941     Positivo
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
 === FORTALEZAS DE LA CAFETERÍA (Elementos bien valorados) ===
-       normalized_item  mentions  avg_rating    sentiment
-    drinks with coffee       544    4.295956     Positivo
-        place and good       536    4.460821     Positivo
-                  good       496    4.391129     Positivo
-               service       443    4.539503 Muy Positivo
-             excellent       440    4.827273 Muy Positivo
-             delicious       293    4.781570 Muy Positivo
-         friendly nice       267    4.614232 Muy Positivo
-            staff nice       241    4.643154 Muy Positivo
-breakfast an afternoon       237    4.421941     Positivo
-    super good service       219    4.771689 Muy Positivo
-                  nice       207    4.473430     Positivo
-    highly recommended       207    4.826087 Muy Positivo
-                 foods       181    4.558011 Muy Positivo
-            good place       176    4.551136 Muy Positivo
-      good coffee nice       170    4.629412 Muy Positivo
+   normalized_item  mentions  avg_rating    sentiment
+            places       511    4.461840     Positivo
+  coffee and place       508    4.287402     Positivo
+              good       495    4.389899     Positivo
+          services       445    4.539326 Muy Positivo
+    breakfast good       365    4.531507 Muy Positivo
+         delicious       293    4.781570 Muy Positivo
+ kind and friendly       267    4.610487 Muy Positivo
+         wonderful       265    4.781132 Muy Positivo
+         excellent       208    4.879808 Muy Positivo
+              nice       207    4.473430     Positivo
+highly recommended       207    4.826087 Muy Positivo
+     staff depends       201    4.592040 Muy Positivo
+ nice good service       194    4.742268 Muy Positivo
+             foods       181    4.558011 Muy Positivo
+pretty good coffee       157    4.617834 Muy Positivo
 
 === ÁREAS DE MEJORA (Elementos con valoración baja) ===
-      normalized_item  mentions  avg_rating sentiment
-               bottle         5    1.000000  Negativo
-              manners         5    1.000000  Negativo
-      don t recommend         5    1.000000  Negativo
-     don t understand         5    1.000000  Negativo
-      plastic bottles         7    1.000000  Negativo
-                worse         6    1.000000  Negativo
-         poor quality         7    1.000000  Negativo
-            apologize         5    1.200000  Negativo
-                 poor         9    1.222222  Negativo
-poor customer service         7    1.285714  Negativo
+          normalized_item  mentions  avg_rating sentiment
+         don t understand         5    1.000000  Negativo
+terrible customer service         5    1.000000  Negativo
+                  manners         5    1.000000  Negativo
+       wouldn t recommend         5    1.000000  Negativo
+         quality terrible         6    1.000000  Negativo
+  regular plastic bottles         6    1.000000  Negativo
+                    worst         6    1.000000  Negativo
+             glass bottle         7    1.000000  Negativo
+                apologize         5    1.200000  Negativo
+                     poor         9    1.222222  Negativo
 </pre>
 </div>
 </div>
@@ -8945,7 +8941,7 @@ poor customer service         7    1.285714  Negativo
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Recargar el DataFrame original para obtener las fechas</span>
@@ -8983,11 +8979,11 @@ poor customer service         7    1.285714  Negativo
     <span class="n">previous_6_months</span> <span class="o">=</span> <span class="n">monthly_ratings</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">6</span><span class="p">)[</span><span class="s1">'avg_rating'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 
     <span class="k">if</span> <span class="n">last_6_months</span> <span class="o">&gt;</span> <span class="n">previous_6_months</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">✅ Tendencia POSITIVA: Rating promedio subió de </span><span class="si">{</span><span class="n">previous_6_months</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> a </span><span class="si">{</span><span class="n">last_6_months</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2"> Tendencia POSITIVA: Rating promedio subió de </span><span class="si">{</span><span class="n">previous_6_months</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> a </span><span class="si">{</span><span class="n">last_6_months</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">last_6_months</span> <span class="o">&lt;</span> <span class="n">previous_6_months</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">⚠️ Tendencia NEGATIVA: Rating promedio bajó de </span><span class="si">{</span><span class="n">previous_6_months</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> a </span><span class="si">{</span><span class="n">last_6_months</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2"> Tendencia NEGATIVA: Rating promedio bajó de </span><span class="si">{</span><span class="n">previous_6_months</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> a </span><span class="si">{</span><span class="n">last_6_months</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">➡️ Tendencia ESTABLE: Rating promedio se mantiene en </span><span class="si">{</span><span class="n">last_6_months</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2"> Tendencia ESTABLE: Rating promedio se mantiene en </span><span class="si">{</span><span class="n">last_6_months</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -9039,7 +9035,7 @@ poor customer service         7    1.285714  Negativo
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Calcular estadísticas generales</span>
@@ -9050,22 +9046,22 @@ poor customer service         7    1.285714  Negativo
 <span class="nb">print</span><span class="p">(</span><span class="s2">"="</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"           RESUMEN EJECUTIVO - ANÁLISIS DE RESEÑAS"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"="</span><span class="o">*</span><span class="mi">60</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">📊 ESTADÍSTICAS GENERALES:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2"> ESTADÍSTICAS GENERALES:"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"   • Total de reseñas analizadas: </span><span class="si">{</span><span class="n">total_reviews</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"   • Rating promedio: </span><span class="si">{</span><span class="n">avg_rating</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">/5.0"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"   • Reseñas positivas (4-5 estrellas): </span><span class="si">{</span><span class="n">rating_distribution</span><span class="p">[</span><span class="mi">4</span><span class="p">:]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"   • Reseñas negativas (1-2 estrellas): </span><span class="si">{</span><span class="n">rating_distribution</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%"</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">🎯 TOP 5 FORTALEZAS IDENTIFICADAS:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2"> TOP 5 FORTALEZAS IDENTIFICADAS:"</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">strengths</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"   </span><span class="si">{</span><span class="n">idx</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">'normalized_item'</span><span class="p">]</span><span class="o">.</span><span class="n">title</span><span class="p">()</span><span class="si">}</span><span class="s2"> - </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">'mentions'</span><span class="p">]</span><span class="si">}</span><span class="s2"> menciones (Rating: </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">'avg_rating'</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">)"</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">improvements</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">⚠️ PRINCIPALES ÁREAS DE MEJORA:"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2"> PRINCIPALES ÁREAS DE MEJORA:"</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">improvements</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"   • </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">'normalized_item'</span><span class="p">]</span><span class="o">.</span><span class="n">title</span><span class="p">()</span><span class="si">}</span><span class="s2"> - Rating: </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="s1">'avg_rating'</span><span class="p">]</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">💡 RECOMENDACIONES ESTRATÉGICAS:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2"> RECOMENDACIONES ESTRATÉGICAS:"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"   1. Mantener y potenciar los elementos mejor valorados"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"   2. Implementar plan de mejora para áreas identificadas"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"   3. Monitorear mensualmente la evolución de ratings"</span><span class="p">)</span>
@@ -9094,16 +9090,16 @@ poor customer service         7    1.285714  Negativo
    • Reseñas negativas (1-2 estrellas): 16.7%
 
 🎯 TOP 5 FORTALEZAS IDENTIFICADAS:
-   1447. Drinks With Coffee - 544 menciones (Rating: 4.3)
-   3542. Place And Good - 536 menciones (Rating: 4.5)
-   2048. Good - 496 menciones (Rating: 4.4)
-   4281. Service - 443 menciones (Rating: 4.5)
-   1587. Excellent - 440 menciones (Rating: 4.8)
+   3653. Places - 511 menciones (Rating: 4.5)
+   917. Coffee And Place - 508 menciones (Rating: 4.3)
+   2078. Good - 495 menciones (Rating: 4.4)
+   4379. Services - 445 menciones (Rating: 4.5)
+   509. Breakfast Good - 365 menciones (Rating: 4.5)
 
 ⚠️ PRINCIPALES ÁREAS DE MEJORA:
-   • Bottle - Rating: 1.0
+   • Don T Understand - Rating: 1.0
+   • Terrible Customer Service - Rating: 1.0
    • Manners - Rating: 1.0
-   • Don T Recommend - Rating: 1.0
 
 💡 RECOMENDACIONES ESTRATÉGICAS:
    1. Mantener y potenciar los elementos mejor valorados
@@ -9132,55 +9128,16 @@ poor customer service         7    1.285714  Negativo
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Crear directorio de salida</span>
 <span class="n">output_dir</span> <span class="o">=</span> <span class="s2">"cafeteria_insights"</span>
 <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="c1"># 1. Guardar insights globales</span>
-<span class="n">global_insights</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">/global_insights.csv"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"✅ Insights globales guardados en </span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">/global_insights.csv"</span><span class="p">)</span>
-
-<span class="c1"># 2. Guardar fortalezas y áreas de mejora</span>
-<span class="n">strengths</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">/strengths.csv"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">improvements</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">/improvements.csv"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"✅ Fortalezas guardadas en </span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">/strengths.csv"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"✅ Áreas de mejora guardadas en </span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">/improvements.csv"</span><span class="p">)</span>
-
-<span class="c1"># 3. Guardar análisis temporal</span>
-<span class="n">monthly_ratings</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">/monthly_trends.csv"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"✅ Tendencias mensuales guardadas en </span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">/monthly_trends.csv"</span><span class="p">)</span>
-
-<span class="c1"># 4. Guardar mapeo de clusters para referencia</span>
-<span class="n">cluster_mapping</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([</span>
-    <span class="p">{</span><span class="s2">"canonical_item"</span><span class="p">:</span> <span class="n">c</span><span class="p">[</span><span class="s2">"canonical"</span><span class="p">],</span> <span class="s2">"variant"</span><span class="p">:</span> <span class="n">v</span><span class="p">}</span>
-    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">clusters</span>
-    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">c</span><span class="p">[</span><span class="s2">"phrases"</span><span class="p">]</span>
-<span class="p">])</span>
-<span class="n">cluster_mapping</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">/item_clusters.csv"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"✅ Clusters de elementos guardados en </span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">/item_clusters.csv"</span><span class="p">)</span>
-
-<span class="c1"># 5. Crear un resumen en Excel con múltiples hojas</span>
-<span class="k">with</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelWriter</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">/cafeteria_analysis_complete.xlsx"</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">'openpyxl'</span><span class="p">)</span> <span class="k">as</span> <span class="n">writer</span><span class="p">:</span>
-    <span class="n">global_insights</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">'Top 50 Items'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-    <span class="n">strengths</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">'Strengths'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-    <span class="n">improvements</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">'Improvements'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-    <span class="n">monthly_ratings</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">'Monthly Trends'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-    <span class="c1"># Crear hoja de resumen</span>
-    <span class="n">summary_data</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s1">'Metric'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'Total Reviews'</span><span class="p">,</span> <span class="s1">'Average Rating'</span><span class="p">,</span> <span class="s1">'5-Star Reviews %'</span><span class="p">,</span> <span class="s1">'1-Star Reviews %'</span><span class="p">,</span>
-                   <span class="s1">'Total Unique Items'</span><span class="p">,</span> <span class="s1">'Most Mentioned Item'</span><span class="p">],</span>
-        <span class="s1">'Value'</span><span class="p">:</span> <span class="p">[</span><span class="n">total_reviews</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">avg_rating</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">rating_distribution</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%"</span><span class="p">,</span>
-                  <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">rating_distribution</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">%"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">global_insights</span><span class="p">),</span>
-                  <span class="n">global_insights</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'normalized_item'</span><span class="p">]</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">global_insights</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">'N/A'</span><span class="p">]</span>
-    <span class="p">}</span>
-    <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">summary_data</span><span class="p">)</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">'Summary'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">✅ Análisis completo exportado a </span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">/cafeteria_analysis_complete.xlsx"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">¡Análisis completado exitosamente!"</span><span class="p">)</span>
+<span class="c1"># Guardar insights globales</span>
+<span class="n">global_insights</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">/insights_cafemadridUCM.csv"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">" Insights globales guardados en </span><span class="si">{</span><span class="n">output_dir</span><span class="si">}</span><span class="s2">/global_insights.csv"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -9193,15 +9150,7 @@ poor customer service         7    1.285714  Negativo
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>✅ Insights globales guardados en cafeteria_insights/global_insights.csv
-✅ Fortalezas guardadas en cafeteria_insights/strengths.csv
-✅ Áreas de mejora guardadas en cafeteria_insights/improvements.csv
-✅ Tendencias mensuales guardadas en cafeteria_insights/monthly_trends.csv
-✅ Clusters de elementos guardados en cafeteria_insights/item_clusters.csv
-
-✅ Análisis completo exportado a cafeteria_insights/cafeteria_analysis_complete.xlsx
-
-¡Análisis completado exitosamente!
+<pre> Insights globales guardados en cafeteria_insights/global_insights.csv
 </pre>
 </div>
 </div>
